@@ -1,15 +1,14 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
+import ReactDOM from "react-dom";
 import Homepage from "./Homepage";
 
-
-function App(props) {
+function App() {
   return (
     <div className="center">
-        <Homepage/>
+      <Homepage/>
     </div>
   );
 }
 
 const appDiv = document.getElementById('app');
-createRoot(appDiv).render(<App />);
+ReactDOM.render(<App />, appDiv);
